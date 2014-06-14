@@ -1,0 +1,29 @@
+{
+  "name": "stir-template",
+  "version": "0.0.1",
+  "description": "server-side template inspired by React",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiyinyiyong/stir-template.git"
+  },
+  "author": "jiyinyiyong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiyinyiyong/stir-template/issues"
+  },
+  "homepage": "https://github.com/jiyinyiyong/stir-template",
+  "keywords": [
+    "react",
+    "html",
+    "template"
+  ],
+  "devDependencies": {
+    "mission": "0.0.7",
+    "shelljs": "^0.3.0"
+  },
+  "dependencies": {}
+}
