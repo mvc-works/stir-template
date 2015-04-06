@@ -2,51 +2,51 @@
 Stir template
 ------
 
-a server-side template engine inspired by React,
-when I use that in CoffeeScript.
-
-By "stir" I mean, I want to stir CoffeeScript with HTML,
-so that generating HTML is easier and dirtier.
+A string-based HTML template library inspired by React.
 
 ### Usage
-
 
 ```bash
 npm i --save-dev stir-template
 ```
 
-```coffee
-{$, $$} = require 'stir-template'
+Methods:
 
-renderItem = (data) ->
-  $.div
-    className: 'child'
-    $.span {},
-      data.name
-
-render = ->
-  cond = yes
-  childElements = [
-    name: 'a'
-  ,
-    name: 'b'
-  ,
-    name: 'c'
-  ].map renderItem
-
-  $.div
-    className: $$.if cond,
-      'is-ok'
-      'not-ok'
-    $.div
-      className: $$.concat 'normal',
-        if cond then 'activate'
-        if other? then 'other'
-      childElements
-    'html content'
+```cirru
+stir.render
+stir.createElement
+stir.createFactory
 ```
 
-Read `example.coffee` for the whole demo.
+Predefined:
+
+```cirru
+stir.doctype
+stir.html
+stir.head
+stir.body
+stir.div
+```
+
+Example in CirruScript:
+
+```cirru
+var
+  stir $ require :stir-tempate
+  html stir.html
+  head stir.head
+  body stir.body
+  div $ stir.createFactory :div
+
+= module.exports $ \ (data)
+  return $ stir.render
+    stir.doctype
+    html null
+      head null
+      body null
+        div (object (:name :a)) :empty
+        div
+```
 
 ### API
 
