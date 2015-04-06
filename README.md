@@ -48,16 +48,12 @@ var
         div
 ```
 
-### API
+### Difference from React
 
-For supported elements, read `coffee/elements.coffee` for more.
-The code was learnt from React:
+`stir-template` **does not escape DOM properties**(which React does).
+Object properties are directly rendered to DOM properties.
 
 * https://github.com/facebook/react/blob/master/src/browser/ReactDOM.js
-
-For properties, like React, there are some alias, like `className` for `class`.
-You may learn more in reading `coffee/names.coffee`, with related code at:
-
 * https://github.com/facebook/react/blob/master/src/browser/ui/dom/SVGDOMPropertyConfig.js
 * https://github.com/facebook/react/blob/master/src/browser/ui/dom/HTMLDOMPropertyConfig.js
 
