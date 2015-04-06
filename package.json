@@ -1,6 +1,6 @@
 {
   "name": "stir-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "server-side template inspired by React",
   "main": "lib/index.js",
   "scripts": {

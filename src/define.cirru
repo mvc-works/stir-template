@@ -11,4 +11,4 @@ var
 
 = exports.body $ core.createFactory :body
 
-= exports.div $ core.createFactory :body
+= exports.div $ core.createFactory :div

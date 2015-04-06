@@ -7,6 +7,7 @@ var
 = exports.html define.html
 = exports.head define.head
 = exports.body define.body
+= exports.div define.div
 
 = exports.render core.render
 = exports.createFactory core.createFactory
