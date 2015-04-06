@@ -4,13 +4,17 @@ var
   html stir.html
   head stir.head
   body stir.body
-  div $ stir.createFactory :div
+  div stir.div
+  link $ stir.createFactory :link
+  script $ stir.createFactory :script
 
 = module.exports $ \ (data)
   return $ stir.render
     stir.doctype
     html null
       head null
+        link
+        script
       body null
         div (object (:name :a)) :empty
         div

@@ -1,4 +1,7 @@
 
+var
+  close $ require :./close
+
 = exports.render $ \ (data)
 
   return :<div></div>
@@ -22,9 +25,9 @@ var $ formatProps $ \ (props)
   = before $ cond (> keys.length 0)
     + :< name ": " (formatProps props)
     + :< name
-  = after $ cond (> childrenHtml.length 0)
-    + :> childrenHtml :</ name :>
+  = after $ cond (close.is name)
     + ": />"
+    + :> childrenHtml :</ name :>
   return $ + before after
 
 = exports.createFactory $ \ (name)
