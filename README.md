@@ -25,7 +25,18 @@ stir.doctype
 stir.html
 stir.head
 stir.body
+stir.title
+
+stir.link
+stir.meta
+stir.script
+
 stir.div
+stir.span
+stir.a
+stir.code
+stir.input
+stir.textarea
 ```
 
 Example in CirruScript:
