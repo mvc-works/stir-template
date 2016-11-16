@@ -47,7 +47,7 @@ stir.textarea
 
 Example in CoffeeScript:
 
-```cirru
+```coffee
 {html, head, body, div} = stir
 
 link = stir.createFactory 'link'
