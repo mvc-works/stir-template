@@ -5,6 +5,6 @@ gulp.task 'script', (cb) ->
   script = require 'gulp-coffee'
 
   gulp
-  .src 'src/*.cirru'
-  .pipe script()
+  .src 'src/*.coffee'
+  .pipe script(bare: yes)
   .pipe gulp.dest('lib/')

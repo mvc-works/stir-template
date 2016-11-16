@@ -1100,6 +1100,10 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
+stir-template:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/stir-template/-/stir-template-0.2.0.tgz#4ea8e5f126d8a3875655408773b908950027dd45"
+
 stream-consume@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/stream-consume/-/stream-consume-0.1.0.tgz#a41ead1a6d6081ceb79f65b061901b6d8f3d1d0f"
