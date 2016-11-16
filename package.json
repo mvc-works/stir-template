@@ -1,6 +1,6 @@
 {
   "name": "stir-template",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "server-side template inspired by React",
   "main": "lib/index.js",
   "scripts": {
@@ -22,9 +22,8 @@
     "template"
   ],
   "devDependencies": {
-    "cirru-script": "^0.2.1",
     "gulp": "^3.8.11",
-    "gulp-cirru-script": "^0.1.1"
+    "gulp-coffee": "^2.3.3"
   },
   "dependencies": {}
 }

@@ -10,9 +10,15 @@ A string-based HTML template library inspired by React.
 npm i --save-dev stir-template
 ```
 
+or
+
+```
+yarn add --dev stir-template
+```
+
 Methods:
 
-```cirru
+```coffee
 stir.render
 stir.createElement
 stir.createFactory
@@ -20,7 +26,7 @@ stir.createFactory
 
 Predefined:
 
-```cirru
+```coffee
 stir.doctype
 stir.html
 stir.head
@@ -39,24 +45,23 @@ stir.input
 stir.textarea
 ```
 
-Example in CirruScript:
+Example in CoffeeScript:
 
 ```cirru
-var
-  stir $ require :stir-tempate
-  html stir.html
-  head stir.head
-  body stir.body
-  div $ stir.createFactory :div
+{html, head, body, div} = stir
 
-= module.exports $ \ (data)
-  return $ stir.render
-    stir.doctype
-    html null
-      head null
-      body null
-        div (object (:name :a)) :empty
-        div
+link = stir.createFactory 'link'
+script = stir.createFactory 'script'
+
+module.exports = (data) ->
+  stir.render stir.doctype,
+    html null,
+      head null,
+        link()
+        script()
+      body null,
+        div name: 'a', 'empty'
+        div()
 ```
 
 ### Difference from React
