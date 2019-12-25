@@ -1,7 +1,7 @@
 
 stir = require '../src/index'
 
-{html, head, body, div} = stir
+{html, head, body, div, style} = stir
 
 link = stir.createFactory 'link'
 script = stir.createFactory 'script'
@@ -12,6 +12,7 @@ module.exports = (data) ->
       head null,
         link()
         script()
+        style null, "body {color: red;}"
       body null,
         div name: 'a', 'empty'
         div()

@@ -16,6 +16,8 @@ exports.a = define.a
 exports.code = define.code
 exports.input = define.input
 exports.textarea = define.textarea
+exports.style = define.style
+
 exports.render = core.render
 
 exports.createFactory = core.createFactory

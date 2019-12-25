@@ -1,9 +1,11 @@
 {
   "name": "stir-template",
-  "version": "0.2.1",
+  "version": "0.2.2-a1",
   "description": "server-side template inspired by React",
   "main": "lib/index.js",
   "scripts": {
+    "compile": "coffee -o lib/ -bc src/*.coffee",
+    "prepare": "yarn compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +24,7 @@
     "template"
   ],
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-coffee": "3.0.3",
-    "stir-template": "0.2.1"
+    "coffeescript": "^2.4.1"
   },
   "dependencies": {}
 }
