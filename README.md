@@ -2,17 +2,13 @@
 Stir template
 ------
 
-A string-based HTML template library inspired by React.
+> A simple HTML template script. It's supposed to be used in CoffeeScript or CirruScript which use indentations as syntax.
 
 ### Usage
 
+![](https://img.shields.io/npm/v/stir-template.svg?style=flat-square)
+
 ```bash
-npm i --save-dev stir-template
-```
-
-or
-
-```
 yarn add --dev stir-template
 ```
 
@@ -36,6 +32,7 @@ stir.title
 stir.link
 stir.meta
 stir.script
+stir.style
 
 stir.div
 stir.span
